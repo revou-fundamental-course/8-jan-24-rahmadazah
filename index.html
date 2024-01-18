@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik | Kalkulator Matematik</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Katik | Kalkulator Matematik</h1>
+        <p>Menghitung nilai luas dan keliling sebuah persegi</p>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h2>PERSEGI</h2>
+        </div>
+        <div class="about">
+            <div class="left">
+                <p>Persegi atau bujur sangkar adalah bangun datar
+                    <br/>dua dimensi yang dibentuk oleh empat buah rusuk
+                    <br/>yang sama panjang dan memiliki empat buah sudut
+                    <br/>yang kesemuanya adalah sudut siku-siku.
+                </p>
+                <b>Rumus Perhitungan</b>
+                <p>Luas Persegi
+                    <br/>L = sisi x sisi
+                    <br/>Keliling Persegi
+                    <br/>K = 4 x sisi
+                </p>
+            </div>
+            <div class="right">
+                <img src="img/persegi.png" alt="Persegi">
+            </div>
+        </div>
+    </div>
+    <div class="container-calculate">
+        <h2>Mulai menghitung?</h2>
+        <div class="button-container">
+            <button class="button" onclick="showLuas()">Luas</button>
+            <button class="button" onclick="showKeliling()">Keliling</button>
+            <div id="luas">
+                <div class="title-box">
+                    <h2>Hitung Luas Persegi</h2>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="sideLuas" placeholder="Masukkan panjang sisi">
+                </div>
+                <div class="button-box">
+                    <button onclick="calculateLuas()">Hitung</button>
+                    <button onclick="resetForm()">Reset</button>
+                </div>
+                <div class="result-box" id="result">
+                    <p>Luas Persegi: <span id="resultLuas"></span></p>
+                </div>
+            </div>
+            <div id="keliling">
+                <div class="title-box">
+                    <h2>Hitung keliling Persegi</h2>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="sideKeliling" placeholder="Masukkan panjang sisi">
+                </div>
+                <div class="button-box">
+                    <button onclick="calculateKeliling()">Hitung</button>
+                    <button onclick="resetForm()">Reset</button>
+                </div>
+                <div class="result-box" id="result">
+                    <p>Keliling Persegi: <span id="resultKeliling"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
